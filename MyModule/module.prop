@@ -1,8 +1,7 @@
-
-id=init_main
-name=main
-version=0.0.1
-versionCode=20240903
-author=LIghtJUNction
-description=修复少许错误，准备开启一个分支开始制作nethunter的ksu模块
-updateJson=http://raw.githubusercontent.com/LIghtJUNction/RootManage-Module-Model/main  /update.json
+id=Kali-NetHunter-Ksu
+name=Kali-NetHunter for KernelSU
+version=1.2.0
+versionCode=11000
+author=Nethunter-Team @ gitlab & Uranium92
+description=Kali-NetHunter apps, binary, firmwares, chroot
+template=1510
