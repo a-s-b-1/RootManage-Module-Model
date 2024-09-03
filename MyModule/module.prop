@@ -1,7 +1,8 @@
-id=Kali-NetHunter-Ksu
-name=Kali-NetHunter for KernelSU
-version=1.2.0
-versionCode=11000
-author=Nethunter-Team @ gitlab & Uranium92
-description=Kali-NetHunter apps, binary, firmwares, chroot
-template=1510
+
+id=init-NetHunter-kernelsu
+name=NetHunter-kernelsu
+version=0.0.0
+versionCode=20240903
+author=SherlockChiang&LIghtJUNction
+description=测试NetHunter-kernelsu分支初始化
+updateJson=http://raw.githubusercontent.com/LIghtJUNction/RootManage-Module-Model/NetHunter-ksu  /update.json
