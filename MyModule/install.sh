@@ -1,8 +1,8 @@
 #!/bin/bash
 SKIPMOUNT=false
 PROPFILE=false
-POSTFSDATA=true
-LATESTARTSERVICE=false
+POSTFSDATA=false
+LATESTARTSERVICE=true
 
 # Define Several Variables 
 [ -z $TMPDIR ] && TMPDIR=/dev/tmp;
