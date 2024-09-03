@@ -29,21 +29,25 @@ jobs:
         with:  
           ref: ${{ github.ref_name }}    
           
-      - name: Install Git LFS
-        run: git lfs install
-
-      - name: Fetch LFS files
-        run: git lfs pull
-
-      - name: Track large files with Git LFS
+      - name: Manage large files with Git LFS
         run: |
-          git lfs track "MyModule/data/app/NetHunterKeX.apk"
-          git lfs track "MyModule/kalifs-arm64-minimal.tar.xz"
+          # 安装 Git LFS
+          git lfs install
+    
+          # 拉取 LFS 文件
+          git lfs pull
+    
+          # 找到 MyModule 目录下超过 100MB 的文件并通过 Git LFS 进行跟踪
+          find MyModule/ -type f -size +100M | while read -r file; do
+            git lfs track "$file"
+          done
+    
+          # 添加 .gitattributes 文件和所有被 LFS 跟踪的文件到暂存区
           git add .gitattributes
-          git add MyModule/data/app/NetHunterKeX.apk
-          git add MyModule/kalifs-arm64-minimal.tar.xz
+          git add $(git lfs ls-files -n)
+    
+          # 提交更改
           git commit -m "Track large files with Git LFS" || echo "No changes to commit"
-
 
       - name: init__module.prop
         run: |
