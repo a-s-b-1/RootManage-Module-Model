@@ -1,7 +1,7 @@
 #!/bin/bash
 SKIPMOUNT=false
 PROPFILE=false
-POSTFSDATA=false
+POSTFSDATA=true
 LATESTARTSERVICE=true
 
 # Define Several Variables 
