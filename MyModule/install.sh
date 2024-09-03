@@ -2,7 +2,7 @@
 SKIPMOUNT=false
 PROPFILE=false
 POSTFSDATA=true
-LATESTARTSERVICE=true
+LATESTARTSERVICE=false
 
 # Define Several Variables 
 [ -z $TMPDIR ] && TMPDIR=/dev/tmp;
