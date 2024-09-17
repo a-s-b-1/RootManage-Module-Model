@@ -4,5 +4,5 @@ name=ab
 version=0.0.0
 versionCode=20240917
 author=ab
-description=0
+description=ab
 updateJson=http://raw.githubusercontent.com/a-s-b-1/RootManage-Module-Model/main/update.json
